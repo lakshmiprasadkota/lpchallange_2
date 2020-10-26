@@ -75,6 +75,38 @@ class _LpState extends State<Lppage>{
                      )
 
                  ),
+                 SizedBox(height: 50.0,),
+                 Container(
+
+                   child:  Text("By logging in, you are agreeing to our" ,style:TextStyle(color:Colors.black ,fontSize: 10,
+                       fontStyle: FontStyle.italic),),
+                 ),
+                 Row(
+                   mainAxisAlignment: MainAxisAlignment.center,
+                   children:<Widget> [ InkWell(
+                     onTap: (){},
+                     child: Text('Terms of Service ',
+                         style:TextStyle(
+                             fontSize:10,
+                             color:Colors.redAccent,
+                             fontWeight: FontWeight.bold,
+                             decoration: TextDecoration.underline
+                         )),
+                   ),
+                     Text('and' , style: TextStyle(fontSize: 10),),
+                     SizedBox(width: 5),
+                     InkWell(
+                       onTap: (){},
+                       child: Text('Privacy Policy',
+                           style:TextStyle(
+                               fontSize:10,
+                               color:Colors.redAccent,
+                               fontWeight: FontWeight.bold,
+                               decoration: TextDecoration.underline
+                           )),
+                     )
+                   ],
+                 ),
 
 
 
